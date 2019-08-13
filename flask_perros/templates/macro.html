@@ -1,0 +1,7 @@
+{% macro renderizar_campos (field) %}
+<td>{{field.label}} </td> 
+<br>
+<td>{{field(**kwargs) |safe}}</td>
+<br>
+{% endmacro %}
+

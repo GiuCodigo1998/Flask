@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% if sitios %}
+        <ul>
+          {% for enlace in sitios %}
+            <li><a href="{{ enlace.url }}">{{ enlace.nombre}}</a></li>
+            <img src ="{{ enlace.url }} " width='100' height='100'>
+
+          {% endfor %}
+        </ul>
+    {% else %}
+         <p>No Hay enlaces que mostrar</p>    
+    {% endif %}
+</body>
+</html>

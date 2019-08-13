@@ -1,0 +1,12 @@
+{% extends 'base/base.html' %}
+{% block title %} {{title}} {% endblock %}
+{% block content %}
+  <p>Uso de Archivos estaticos en Python</p>   
+  <div>
+    {% from "macro.html" import renderizar_campos %}
+    <div>{{ renderizar_campos(form.username)}}</div>
+    <div>{{ renderizar_campos(form.email)}}</div>
+    <div>{{ renderizar_campos(form.comment)}}</div>
+    <div>{{ renderizar_campos(form.nuevocampo)}}</div>
+  </div>
+{% endblock %}
