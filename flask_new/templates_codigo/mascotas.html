@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valores desde PYTHON</title>
+</head>
+<body>
+    <h4>El curso ha llevar es el siguiente:</h4>
+    <h4>{{ noentiendo }}</h4>
+    <h4>La Edad de la mascota:</h4>
+    <h4>{{ edad }}</h4>
+    {% if edad>10 %}
+        <p>La mascota es mayor de edad </p>
+    {% endif %}    
+
+    {% for item in lista %}
+        <p>{{ item }}</p>
+    {% endfor %}
+</body>
+</html>
